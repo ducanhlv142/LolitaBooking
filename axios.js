@@ -1,10 +1,9 @@
 import axios from "axios";
 import _ from "lodash";
-require("dotenv").config();
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 const instance = axios.create({
-    baseURL: process.env.REACT_APP_BACKEND_URL,
+    baseURL: "http://192.168.46.155:8003",
     //  withCredentials: true
 });
 
