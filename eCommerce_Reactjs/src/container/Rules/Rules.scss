@@ -1,0 +1,70 @@
+.rules-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.rules-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 2rem;
+    position: relative;
+}
+
+.rules-container h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #71cd14;
+    margin: 10px auto 30px auto;
+}
+
+.rules-container p, .rules-container ul {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.rules-container ul li {
+    margin-bottom: 10px; /* Add space between list items */
+    position: relative;
+    padding-left: 20px;
+}
+
+.rules-container ul li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #71cd14;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rules-container p, .rules-container ul li {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rules-container .fa-icon {
+    margin-right: 10px;
+}
